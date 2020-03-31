@@ -1,0 +1,70 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        // Sdk and tools
+        compileSdkVersion = 29
+        minSdkVersion = 21
+        targetSdkVersion = 29
+
+        // App dependencies
+        appCompatVersion = '1.1.0'
+        constraintLayoutVersion = '2.0.0-beta4'
+        coreTestingVersion = '2.0.0'
+        coroutinesVersion = "1.3.3"
+        espressoVersion = '3.1.1'
+        fragmentVersion = '1.2.1'
+        glideVersion = '4.10.0'
+        gradleVersion = '3.6.1'
+        gsonVersion = '2.8.2'
+        junitVersion = '4.12'
+        kotlinVersion = '1.3.70'
+        koinVersion = '2.0.1'
+        vectorVersion = '0.5.5'
+        ktlintVersion = '0.33.0'
+        ktxVersion = '1.2.0'
+        lifecycleVersion = '2.2.0'
+        materialVersion = '1.1.0'
+        navigationVersion = '2.2.0'
+        recyclerViewVersion = '1.1.0-alpha05'
+        roomVersion = '2.2.4'
+        runnerVersion = '1.0.1'
+        truthVersion = '0.42'
+        testExtJunit = '1.1.0'
+        uiAutomatorVersion = '2.2.0'
+        viewPagerVersion = '1.0.0'
+        workVersion = '2.1.0'
+        okhttpVersion = '4.3.1'
+        timberVersion = '4.7.1'
+        scarletVersion = '0.1.10'
+        flowbindingVersion = "0.9.0"
+
+        crashlyticsVersion = "17.0.0-beta01"
+        firebaseAnalyticsVersion = "17.2.3"
+    }
+
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
